@@ -1,0 +1,208 @@
+/* IMPORT FONTS */
+
+@font-face {
+    font-family: Product Sans Medium;
+    src: url(Fonts/ProductSans-Medium.ttf);
+}
+@font-face {
+    font-family: Product Sans Black;
+    src: url(Fonts/ProductSans-Black.ttf);
+}
+@font-face {
+    font-family: Monsterrat Bold;
+    src: url(Fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Monsterrat Medium;
+    src: url(Fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Product Sans Light;
+    src: url(Fonts/ProductSans-Light.ttf);
+}
+
+/* TITLE */
+#corpo {
+    background-color: rgb(32, 32, 32);
+}
+#Inizio {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 34.5%;
+    margin-right: 34.5%;
+}
+#titolo {
+    transition: 0.3s;
+    font-family: Product Sans Black;
+    padding-top: 30px;
+    padding-bottom: 7px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 72px;
+    color: rgb(236, 236, 236);
+    border-bottom: solid transparent 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#titolo:hover {
+    transition: 0.3s;
+    border-bottom: solid 5px rgb(225, 225, 225);
+    margin-left: 23%;
+    margin-right: 23%;
+}
+#intestazione {
+    transition: 0.4s;
+    background-color: rgb(15, 15, 15);
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+    text-align: center;
+    color: rgb(190, 190, 190);
+    font-family: Product Sans Light;
+    font-size: 18px;
+    margin-bottom: 40px;
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+#intestazione:hover {
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    background-color: rgb(20,20,20);
+    transform: scale(1.08) translateZ(0);
+    /* margin-left: 40%;
+    margin-right: 40%; */
+}
+
+/* PARAGRAPHS */
+#ContenitoreParagrafo {
+    transition: 0.4s;
+    background-color: rgb(15,15,15);
+    margin-right: 3%;
+    margin-left: 3%;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+#ContenitoreParagrafo:hover {
+    box-shadow: 0px 0px 20px rgb(89, 89, 89);
+}
+
+/* LEFT ALIGNED PARAGRAPHS */
+#LayoutParagrafoL {
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#TitoloParagrafoL {
+    transition: 0.3s;
+    font-family: Product Sans;
+    font-size: 38px;
+    color: white;
+    margin-bottom: -15px;
+    margin-left: 2%;
+    margin-top: 15px;
+    border-bottom: solid 3px transparent;
+    width: fit-content;
+    padding-bottom: 5px;
+}
+#TitoloParagrafoL:hover {
+    transition: 0.4s;
+    border-bottom: solid 3px rgb(210, 210, 210);
+    /* font-size: 40px;
+    margin-bottom: -17px; */
+    transform: scale(1.05) translateZ(0);
+}
+#ParagrafoL {
+    margin-top: 35px;
+    font-family: Calibri;
+    font-size: 22px;
+    line-height: 1.35;
+    flex: 2;
+    margin-left: 1%;
+    margin-right: 5%;
+    color: white;
+    float: left;
+}
+#ImmagineL {
+    transition: 0.5s;
+    border: solid 7px rgb(150, 150, 150);
+    border-radius: 8px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 0%;
+    width: 20%;
+    max-width: 100%;
+    position: relative;
+    display: block;
+}
+#ImmagineL:hover {
+    border: solid 7px rgb(150, 150, 150);
+    border-radius: 22px;
+    transform: scale(1.08) translateZ(0);
+}
+
+/* RIGHT ALIGNED PARAGRAPHS */
+#LayoutParagrafoR {
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#TitoloParagrafoR {
+    text-align: right;
+    display: flex;
+    justify-items: flex-end;
+    transition: 0.3s;
+    font-family: Product Sans;
+    font-size: 38px;
+    color: white;
+    margin-bottom: -15px;
+    margin-right: 2%;
+    margin-top: 15px;
+    border-bottom: solid 3px transparent;
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-left: auto;
+}
+#TitoloParagrafoR:hover {
+    transition: 0.4s;
+    border-bottom: solid 3px rgb(210, 210, 210);
+    /* font-size: 40px;
+    margin-bottom: -17px; */
+    transform: scale(1.05) translateZ(0);
+}
+#ParagrafoR {
+    margin-top: 35px;
+    font-family: Calibri;
+    /* font-size: 20px; */
+    font-size: 22px;
+    line-height: 1.35;
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 1%;
+    color: white;
+    float: right;
+}
+#ImmagineR {
+    transition: 0.5s;
+    border: solid 7px rgb(150, 150, 150);
+    border-radius: 8px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 0%;
+    width: 20%;
+    max-width: 100%;
+    position: relative;
+    display: block;
+}
+#ImmagineR:hover {
+    border: solid 7px rgb(150, 150, 150);
+    border-radius: 22px;
+    transform: scale(1.08) translateZ(0);
+}
