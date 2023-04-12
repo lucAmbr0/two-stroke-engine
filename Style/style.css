@@ -2,23 +2,23 @@
 
 @font-face {
     font-family: Product Sans Medium;
-    src: url(Fonts/ProductSans-Medium.ttf);
+    src: url(fonts/ProductSans-Medium.ttf);
 }
 @font-face {
     font-family: Product Sans Black;
-    src: url(Fonts/ProductSans-Black.ttf);
+    src: url(fonts/ProductSans-Black.ttf);
 }
 @font-face {
     font-family: Monsterrat Bold;
-    src: url(Fonts/Montserrat-Bold.ttf);
+    src: url(fonts/Montserrat-Bold.ttf);
 }
 @font-face {
     font-family: Monsterrat Medium;
-    src: url(Fonts/Montserrat-Medium.ttf);
+    src: url(fonts/Montserrat-Medium.ttf);
 }
 @font-face {
     font-family: Product Sans Light;
-    src: url(Fonts/ProductSans-Light.ttf);
+    src: url(fonts/ProductSans-Light.ttf);
 }
 
 /* TITLE */
