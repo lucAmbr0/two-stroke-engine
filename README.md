@@ -4,6 +4,6 @@
 
 
 About me:
-- Just a 15yo guy who loves wasting his free time trying to learn something new about computer technology.
+- A 16yo guy who loves learning anything about computer science instead of having friends.
 - Posting totally random tech stuff, I enjoy doing useless things too difficult for me.
 - @luca.ambroo_ [instagram]
