@@ -35,6 +35,12 @@
 #corpo {
     background-color: rgb(32, 32, 32);
 }
+::selection {
+    background-color: rgba(150, 150, 150, 0.3);
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    text-decoration: underline;
+}
 #Inizio {
     display: flex;
     flex-wrap: nowrap;
