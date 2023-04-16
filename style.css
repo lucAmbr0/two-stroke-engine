@@ -5,15 +5,15 @@
 /* ------------------------------ IMPORT FONTS ------------------------------ */
 
 @font-face {
-    font-family: Product Sans Medium;
+    font-family: Product Sans Medium; /* Titoli medi */
     src: url(Fonts/ProductSans-Medium.ttf);
 }
 @font-face {
-    font-family: Product Sans Black;
+    font-family: Product Sans Black; /* Titoli importanti */
     src: url(Fonts/ProductSans-Black.ttf);
 }
 @font-face {
-    font-family: Monsterrat Bold;
+    font-family: Monsterrat Bold; /* Altri titoli */
     src: url(Fonts/Montserrat-Bold.ttf);
 }
 @font-face {
@@ -21,25 +21,30 @@
     src: url(Fonts/Montserrat-Medium.ttf);
 }
 @font-face {
-    font-family: Product Sans Light;
+    font-family: Product Sans Light; /* Note */
     src: url(Fonts/ProductSans-Light.ttf);
 }
 
 
 /* ------------------------------ ANIMATIONS ------------------------------ */
 
-@keyframes fadeDown {
+@keyframes fadeDown { /* Intestazione e inizio pagina */
     from { opacity: 0; }
     to { opacity: 1; transform: translateY(0px);}
 }
-@keyframes fadeDown {
+@keyframes fadeUp { /* Paragrafi pagine */
     from { opacity: 0; }
     to { opacity: 1; transform: translateY(0px);}
+}
+@keyframes fadeUpTransparent { /* trasparenza per <div id="ContenitoreR" in Confronto.html */
+    from { opacity: 0; }
+    to { opacity: 0.7; transform: translateY(0px);}
 }
 
 
 /* ------------------------------ TITLE ------------------------------ */
 #corpo {
+    /* background-color: rgb(20, 20, 20); ------->>> old-background */
     background-image: linear-gradient(to top, rgb(35, 35, 35),rgb(20, 20, 20));
 }
 ::selection {
@@ -185,10 +190,6 @@
 #ContenitoreParagrafo:hover {
     box-shadow: 0px 0px 20px rgb(89, 89, 89);
 } 
-@keyframes fadeUp {
-    from { opacity: 0; }
-    to { opacity: 1; transform: translateY(0px);}
-}
 
 
 /* ------------------------------ LEFT ALIGNED PARAGRAPHS ------------------------------ */
@@ -482,4 +483,66 @@
     text-decoration: underline;
     font-weight: bolder;
     color: white;
+}
+
+
+/* PAGINA CONFRONTO */
+
+#ContenitoreConfronto {
+    width: 100%;
+    margin: 0 auto;
+}
+#ContenitoreL {
+    width: 41%;
+    float: left;
+    margin: 3%;
+    animation: fadeUp 0.0s forwards; /* duration 0.6s */
+    animation-delay: 0.0s; /* delay 0.5s */
+    transition: 0.4s;
+    background-color: rgb(15,15,15);
+    border-radius: 25px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+}
+#ContenitoreL:hover {
+    box-shadow: 0px 0px 10px rgb(89, 89, 89);
+}
+#ContenitoreR {
+    width: 41%;
+    float: right;
+    margin: 3%;
+    animation: fadeUpTransparent 0.0s forwards; /* duration 0.6s */
+    animation-delay: 0.0s; /* delay 0.5s */
+    transition: 0.4s;
+    background-color: rgb(15,15,15);
+    border-radius: 25px;
+    padding: 20px;
+    opacity: 0.5;
+    transform: translateY(30px);
+}
+#ContenitoreR:hover {
+    box-shadow: 0px 0px 10px rgb(89, 89, 89);
+}
+#TitoloParagrafoConfronto {
+    transition: 0.3s;
+    font-family: Product Sans Medium;
+    font-size: 38px;
+    color: rgb(235, 235, 235);
+    margin-bottom: -15px;
+    margin-left: auto; /* centra testo anche con width: fit-content */
+    margin-right: auto;
+    margin-top: 15px;
+    border-bottom: solid 3px transparent;
+    padding-bottom: 5px;
+    text-align: center;
+    width: fit-content;
+}
+#TitoloParagrafoConfronto:hover {
+    transition: 0.4s;
+    border-bottom: solid 3px rgb(210, 210, 210);
+    color: white;
+    /* font-size: 40px; animazione grandezza [fixed]
+    margin-bottom: -17px; */
+    transform: scale(1.05) translateZ(0);
 }
