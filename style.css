@@ -1,51 +1,39 @@
-/*
-        style.css - Il Motore a Due Tempi
-        Ambrosone Luca | 2F - I.T. Leonardo Da Vinci
-*/
-/* ------------------------------ IMPORT FONTS ------------------------------ */
+/* IMPORT FONTS */
 
 @font-face {
-    font-family: Product Sans Medium; /* Titoli medi */
-    src: url(Fonts/ProductSans-Medium.ttf);
+    font-family: 'Product Sans Medium';
+    src: url('fonts/ProductSans-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: Product Sans Black; /* Titoli importanti */
-    src: url(Fonts/ProductSans-Black.ttf);
+    font-family: 'Product Sans Black';
+    src: url('fonts/ProductSans-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: Monsterrat Bold; /* Altri titoli */
-    src: url(Fonts/Montserrat-Bold.ttf);
+    font-family: 'Monsterrat Bold';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: Monsterrat Medium;
-    src: url(Fonts/Montserrat-Medium.ttf);
+    font-family: 'Monsterrat Medium';
+    src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: Product Sans Light; /* Note */
-    src: url(Fonts/ProductSans-Light.ttf);
+    font-family: 'Product Sans Light';
+    src: url('fonts/ProductSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-
-/* ------------------------------ ANIMATIONS ------------------------------ */
-
-@keyframes fadeDown { /* Intestazione e inizio pagina */
-    from { opacity: 0; }
-    to { opacity: 1; transform: translateY(0px);}
-}
-@keyframes fadeUp { /* Paragrafi pagine */
-    from { opacity: 0; }
-    to { opacity: 1; transform: translateY(0px);}
-}
-@keyframes fadeUpTransparent { /* trasparenza per <div id="ContenitoreR" in Confronto.html */
-    from { opacity: 0; }
-    to { opacity: 0.7; transform: translateY(0px);}
-}
-
-
-/* ------------------------------ TITLE ------------------------------ */
+/* TITLE */
 #corpo {
-    /* background-color: rgb(20, 20, 20); ------->>> old-background */
-    background-image: linear-gradient(to top, rgb(35, 35, 35),rgb(20, 20, 20));
+    background-color: rgb(32, 32, 32);
 }
 ::selection {
     background-color: rgba(150, 150, 150, 0.3);
@@ -56,34 +44,10 @@
 #Inizio {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
-    text-align: center;
-    margin-left: 33%;
-    margin-right: 33%;
-}
-#bottomHeader {
-    transition: 0.4s;
-    font-family: Product Sans Medium;
-    font-style: italic;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 16px;
-    color: gray;
-    border-bottom: solid 3px transparent;
-    margin-right: 37%;
-    margin-left: 37%;
-    text-decoration: none;
-    padding-bottom: 2px;
-}
-#bottomHeader:hover {
-    border-bottom: solid 3px gray;
-    margin-right: 37.5%;
-    margin-left: 37.5%;
-    cursor: pointer;
+    margin-left: 34.5%;
+    margin-right: 34.5%;
 }
 #titolo {
-    animation: fadeDown 0.8s forwards;
-    animation-delay: 0s;
     transition: 0.3s;
     font-family: Product Sans Black;
     padding-top: 30px;
@@ -95,8 +59,6 @@
     border-bottom: solid transparent 5px;
     margin-left: 25%;
     margin-right: 25%;
-    opacity: 0;
-    transform: translateY(20px);
 }
 #titolo:hover {
     transition: 0.3s;
@@ -105,8 +67,6 @@
     margin-right: 23%;
 }
 #intestazione {
-    animation: fadeDown 0.5s forwards;
-    animation-delay: 0.2s;
     transition: 0.4s;
     background-color: rgb(15, 15, 15);
     padding: 8px;
@@ -115,68 +75,27 @@
     text-decoration: none;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: -25px;
+    margin-top: -30px;
     text-align: center;
     color: rgb(190, 190, 190);
     font-family: Product Sans Light;
     font-size: 18px;
     margin-bottom: 40px;
-    border: 2px solid black;
-    border-radius: 30px;
-    opacity: 0;
     flex: 1;
-    transform: translateY(20px);
+    border: 1px solid black;
+    border-radius: 30px;
 }
 #intestazione:hover {
     text-decoration: none;
-    color: white;
-    background-color: rgb(4, 4, 4);
+    color: rgb(219, 219, 219);
+    background-color: rgb(20,20,20);
     transform: scale(1.08) translateZ(0);
     /* margin-left: 40%;
     margin-right: 40%; */
 }
-#TornaIndietro {
-    transition: 0.4s;
-    text-align: center;
-    margin-left: 40%;
-    margin-right: 40%;
-}
-#TornaIndietro:hover {
-    transform: scale(1.15) translateZ(0) translateY(0px);
-}
-#TestoIndietro {
-    transition: 0.4s;
-    background-color: rgb(15, 15, 15);
-    padding: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: -25px;
-    text-align: center;
-    color: rgb(190, 190, 190);
-    font-family: Product Sans Light;
-    font-size: 18px;
-    border: 2px solid black;
-    border-radius: 30px;
-    opacity: 1;
-    flex: 1;
-}
-#TestoIndietro:hover {
-    text-decoration: none;
-    color: white;
-    background-color: rgb(4, 4, 4);
-    /* margin-left: 40%;
-    margin-right: 40%; */
-}
 
-
-/* ------------------------------ PARAGRAPHS ------------------------------ */
-
+/* PARAGRAPHS */
 #ContenitoreParagrafo {
-    animation: fadeUp 0.6s forwards;
-    animation-delay: 0.5s;
     transition: 0.4s;
     background-color: rgb(15,15,15);
     margin-right: 3%;
@@ -184,15 +103,12 @@
     border-radius: 25px;
     padding: 30px;
     margin-bottom: 50px;
-    opacity: 0;
-    transform: translateY(30px);
 }
 #ContenitoreParagrafo:hover {
     box-shadow: 0px 0px 20px rgb(89, 89, 89);
-} 
+}
 
-
-/* ------------------------------ LEFT ALIGNED PARAGRAPHS ------------------------------ */
+/* LEFT ALIGNED PARAGRAPHS */
 #LayoutParagrafoL {
     transition: 0.4s;
     display: flex;
@@ -201,9 +117,9 @@
 }
 #TitoloParagrafoL {
     transition: 0.3s;
-    font-family: Product Sans Medium;
+    font-family: Product Sans;
     font-size: 38px;
-    color: rgb(235, 235, 235);
+    color: white;
     margin-bottom: -15px;
     margin-left: 2%;
     margin-top: 15px;
@@ -214,7 +130,6 @@
 #TitoloParagrafoL:hover {
     transition: 0.4s;
     border-bottom: solid 3px rgb(210, 210, 210);
-    color: white;
     /* font-size: 40px;
     margin-bottom: -17px; */
     transform: scale(1.05) translateZ(0);
@@ -233,7 +148,7 @@
 #ImmagineL {
     transition: 0.5s;
     border: solid 7px rgb(150, 150, 150);
-    border-radius: 12px;
+    border-radius: 8px;
     float: right;
     margin-right: 2%;
     margin-top: 0%;
@@ -248,8 +163,7 @@
     transform: scale(1.08) translateZ(0);
 }
 
-
-/* ------------------------------ RIGHT ALIGNED PARAGRAPHS ------------------------------ */
+/* RIGHT ALIGNED PARAGRAPHS */
 #LayoutParagrafoR {
     transition: 0.4s;
     display: flex;
@@ -261,9 +175,9 @@
     display: flex;
     justify-items: flex-end;
     transition: 0.3s;
-    font-family: Product Sans Medium;
+    font-family: Product Sans;
     font-size: 38px;
-    color: rgb(235, 235, 235);
+    color: white;
     margin-bottom: -15px;
     margin-right: 2%;
     margin-top: 15px;
@@ -275,7 +189,6 @@
 #TitoloParagrafoR:hover {
     transition: 0.4s;
     border-bottom: solid 3px rgb(210, 210, 210);
-    color: white;
     /* font-size: 40px;
     margin-bottom: -17px; */
     transform: scale(1.05) translateZ(0);
@@ -295,7 +208,7 @@
 #ImmagineR {
     transition: 0.5s;
     border: solid 7px rgb(150, 150, 150);
-    border-radius: 12px;
+    border-radius: 8px;
     float: left;
     margin-left: 2%;
     margin-top: 0%;
@@ -310,26 +223,8 @@
     border-radius: 22px;
     transform: scale(1.08) translateY(-20px);
 }
-#ImmagineR2 {
-    transition: 0.5s;
-    border: solid 7px rgb(150, 150, 150);
-    border-radius: 12px;
-    float: left;
-    margin-left: 2%;
-    margin-top: 0%;
-    width: 20%;
-    max-width: 100%;
-    position: relative;
-    display: block;
-    transform: translateY(0px);
-}
-#ImmagineR2:hover {
-    border: solid 7px rgb(150, 150, 150);
-    border-radius: 22px;
-    transform: scale(1.08) translateY(0px);
-}
 
-/* ------------------------------ BUTTONS ------------------------------ */
+/* BUTTONS */
 
 #ContenitorePulsante {
     margin-bottom: -10px;
@@ -363,7 +258,7 @@
     transition: 0.4s;
     display: inline-block;
     padding: 15px;
-    font-size: 10px;
+    font-size: 40px;
     font-family: Product Sans Medium;
     width: 25%;
     text-align: center;
@@ -376,7 +271,6 @@
 }
 #Pulsante2:hover {
     box-shadow: 0px 0px 10px rgb(89, 89, 89);
-    font-size: 20px;
 }
 #Pulsante3 {
     margin-left: auto;
@@ -385,6 +279,7 @@
     transition: 0.4s;
     display: inline-block;
     padding: 15px;
+    font-size: 40px;
     font-family: Product Sans Medium;
     width: 25%;
     text-align: center;
@@ -400,20 +295,21 @@
 }
 #ContenutoPulsante {
     padding-bottom: 2px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
     transition: 0.4s;
     border-bottom: solid 5px transparent;
-    font-size: 38px;
+    font-size: 40px;
 }
 #ContenutoPulsante:hover {
     border-bottom: solid 5px white;
-    margin-left: 8%;
-    margin-right: 8%;
-    transform: scale(1.03) translateZ(0);
+    margin-left: 4%;
+    margin-right: 4%;
+    transform: scale(1.05) translateZ(0);
 }
+
 #ImgPulsante {
-    transition: 0.8s;
+    transition: 0.55s;
     width: 80%;
     padding-top: 20px;
     padding: 15px;
@@ -422,127 +318,4 @@
 }
 #ImgPulsante:hover {
     transform: scale(1.11) translateZ(0) translateY(-15px);
-}
-
-
-/* ------------------------------ PAGINA COMPONENTI ------------------------------ */
-
-#Titolo2 {
-    animation: fadeDown 0.8s forwards;
-    animation-delay: 0s;
-    transition: 0.3s;
-    font-family: Product Sans Black;
-    padding-top: 30px;
-    padding-bottom: 7px;
-    margin-bottom: 50px;
-    margin-top: 30px;
-    text-align: center;
-    font-size: 62px;
-    color: rgb(236, 236, 236);
-    border-bottom: solid transparent 5px;
-    margin-left: 16%;
-    margin-right: 16%;
-    opacity: 0;
-    transform: translateY(20px);
-}
-#Titolo2:hover {
-    transition: 0.3s;
-    border-bottom: solid 5px rgb(225, 225, 225);
-    margin-left: 14%;
-    margin-right: 14%;
-}
-.elencoPuntatoL {
-    margin-top: 35px;
-    font-family: Calibri;
-    font-size: 22px;
-    line-height: 1.4;
-    flex: 2;
-    margin-left: 1%;
-    margin-right: 5%;
-    color: white;
-    float: left;
-}
-.elencoPuntatoR {
-    margin-top: 35px;
-    font-family: Calibri;
-    font-size: 22px;
-    line-height: 1.4;
-    flex: 2;
-    margin-left: 1%;
-    margin-right: 5%;
-    color: white;
-    float: right;
-}
-#strong {
-    font-family: Calibri;
-    color: rgb(235, 235, 235);
-    border-right: solid 0px black;
-    transform: translateZ(0);
-}
-#strong:hover {
-    text-decoration: underline;
-    font-weight: bolder;
-    color: white;
-}
-
-
-/* PAGINA CONFRONTO */
-
-#ContenitoreConfronto {
-    width: 100%;
-    margin: 0 auto;
-}
-#ContenitoreL {
-    width: 41%;
-    float: left;
-    margin: 3%;
-    animation: fadeUp 0.0s forwards; /* duration 0.6s */
-    animation-delay: 0.0s; /* delay 0.5s */
-    transition: 0.4s;
-    background-color: rgb(15,15,15);
-    border-radius: 25px;
-    padding: 20px;
-    opacity: 0;
-    transform: translateY(30px);
-}
-#ContenitoreL:hover {
-    box-shadow: 0px 0px 10px rgb(89, 89, 89);
-}
-#ContenitoreR {
-    width: 41%;
-    float: right;
-    margin: 3%;
-    animation: fadeUpTransparent 0.0s forwards; /* duration 0.6s */
-    animation-delay: 0.0s; /* delay 0.5s */
-    transition: 0.4s;
-    background-color: rgb(15,15,15);
-    border-radius: 25px;
-    padding: 20px;
-    opacity: 0.5;
-    transform: translateY(30px);
-}
-#ContenitoreR:hover {
-    box-shadow: 0px 0px 10px rgb(89, 89, 89);
-}
-#TitoloParagrafoConfronto {
-    transition: 0.3s;
-    font-family: Product Sans Medium;
-    font-size: 38px;
-    color: rgb(235, 235, 235);
-    margin-bottom: -15px;
-    margin-left: auto; /* centra testo anche con width: fit-content */
-    margin-right: auto;
-    margin-top: 15px;
-    border-bottom: solid 3px transparent;
-    padding-bottom: 5px;
-    text-align: center;
-    width: fit-content;
-}
-#TitoloParagrafoConfronto:hover {
-    transition: 0.4s;
-    border-bottom: solid 3px rgb(210, 210, 210);
-    color: white;
-    /* font-size: 40px; animazione grandezza [fixed]
-    margin-bottom: -17px; */
-    transform: scale(1.05) translateZ(0);
 }
