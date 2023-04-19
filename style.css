@@ -566,6 +566,7 @@
 #LayoutParagrafoLFunzionamento {
     transition: 0.4s;
     align-items: top;
+    color: white;
 }
 #elencoPuntatoLFunzionamento {
     margin-top: 35px;
