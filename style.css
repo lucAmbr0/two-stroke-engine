@@ -70,15 +70,15 @@
     font-size: 16px;
     color: gray;
     border-bottom: solid 3px transparent;
-    margin-right: 37%;
-    margin-left: 37%;
+    margin-right: 36%;
+    margin-left: 36%;
     text-decoration: none;
     padding-bottom: 2px;
 }
 #bottomHeader:hover {
     border-bottom: solid 3px gray;
-    margin-right: 37.5%;
-    margin-left: 37.5%;
+    margin-right: 36.5%;
+    margin-left: 36.5%;
     cursor: pointer;
 }
 #titolo {
@@ -93,16 +93,16 @@
     font-size: 72px;
     color: rgb(236, 236, 236);
     border-bottom: solid transparent 5px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 22%;
+    margin-right: 22%;
     opacity: 0;
     transform: translateY(20px);
 }
 #titolo:hover {
     transition: 0.3s;
     border-bottom: solid 5px rgb(225, 225, 225);
-    margin-left: 23%;
-    margin-right: 23%;
+    margin-left: 19%;
+    margin-right: 19%;
 }
 #intestazione {
     animation: fadeDown 0.5s forwards;
@@ -113,8 +113,8 @@
     padding-left: 12px;
     padding-right: 12px;
     text-decoration: none;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: -25px;
     text-align: center;
     color: rgb(190, 190, 190);
@@ -405,7 +405,7 @@
     margin-right: 10%;
     transition: 0.4s;
     border-bottom: solid 5px transparent;
-    font-size: 38px;
+    font-size: 32px;
 }
 #ContenutoPulsante:hover {
     border-bottom: solid 5px white;
@@ -441,16 +441,16 @@
     font-size: 62px;
     color: rgb(236, 236, 236);
     border-bottom: solid transparent 5px;
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-left: 12%;
+    margin-right: 12%;
     opacity: 0;
     transform: translateY(20px);
 }
 #Titolo2:hover {
     transition: 0.3s;
     border-bottom: solid 5px rgb(225, 225, 225);
-    margin-left: 14%;
-    margin-right: 14%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .elencoPuntatoL {
     margin-top: 35px;
@@ -582,24 +582,3 @@
     width: 100%;
     border-radius: 20px;
 }
-
-/*
-//
-//              _..._
-//            .'     '.      _
-//           /    .-""-\   _/ \
-//         .-|   /:.   |  |   |
-//         |  \  |:.   /.-'-./
-//         | .-'-;:__.'    =/
-//         .'=  *=|     _.='
-//        /   _.  |    ;
-//       ;-.-'|    \   |     @luca.ambroo_
-//      /   | \    _\  _\
-//      \__/'._;.  ==' ==\
-//              \    \   |
-//              /    /   /
-//             /-._/-._/
-//             \   `\  \
-//              `-._/._/
-//
-*/
